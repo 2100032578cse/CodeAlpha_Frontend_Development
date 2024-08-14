@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandrines's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                I am Sandrine, Frontend-Backend Developer!
+                <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=500&pause=1000&color=2CF78E&multiline=true&width=435&height=80&lines=WELCOME+TO+MY+PAGE!" alt="Typing SVG" /></a>
+                
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm AUWIZEYIMANA Sandrine, a passionate Frontend-backend Developer with a knack for crafting visually appealing and user-friendly websites. I specialize in building responsive web applications using modern web technologies. I’m always eager to learn new things and take on new challenges in the world of web development.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Django/flask</li>
+                <li>java development (spring)</li>
+                <li>Responsive Design</li>
+                <li>Version Control (Git & GitHub)</li>
+                <li>UI/UX Design Principles</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Education & Experience</h2>
+            <div class="job">
+                <h3>KL University</h3>
+                <p><strong>Duration:</strong> 2021 - Present</p>
+                <p>Am a computer science and engineering student at KL University from 2021</p>
+            </div>
+            <div class="job">
+                <h3>Junior Web Developer</h3>
+                <p><strong>Duration:</strong> 2022 - present</p>
+                <p>Worked on various client projects, focusing on converting designs into fully functional responsive websites. Gained experience in cross-browser compatibility, debugging, and improving website performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project A - E-commerce Website</h3>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Django, postgres</p>
+                <p>Built a fully functional e-commerce website with a custom shopping cart and product filter features. Ensured the website was mobile-friendly and optimized for performance.</p>
+            </div>
+            <div class="project">
+                <h3>Project B - Personal Portfolio Website</h3>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <p>Created a personal portfolio website to showcase my work and skills. The website features a smooth scroll, responsive design, and interactive elements using JavaScript.</p>
+            </div>
+            <div class="project">
+                <h3>Project C - Habit fit tracker</h3>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, flask, mysql</p>
+                <p>developed a web app that tracks and records the habits of a person to maintain health life.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to drop me a message!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sandrine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // script.js
+
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
